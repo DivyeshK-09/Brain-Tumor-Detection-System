@@ -1,7 +1,56 @@
-# Brain Tumor Detection System
+# 🧠 Brain Tumor Detection System
 
-    Detects and classifies if one has brain tumor on the basis of provided MRI scanned images, this uses logistic regression model and the Xception model which works on the principle of CNN (Convolutional Neural Netwroks).
+## 📌 Overview
+A deep learning-based medical imaging system that detects and classifies brain tumors from MRI scans into multiple categories.
 
-    I used a dataset of total 7033 scanned MRI images to train the model, using the 'tensorflow' library to precess the images.
+## 🎯 Objective
+- Automate tumor detection
+- Assist early diagnosis using AI
 
-    To deploy the project, I used streamlit which, by running the app.py python script creates a local host, where you get a UI to use the prediction model on predefined and 'custom' images of MRI scans.
+## 🧠 Approach
+- Dual-model approach:
+  - Logistic Regression (baseline)
+  - Xception CNN (deep learning)
+- Image classification into:
+  - Glioma
+  - Meningioma
+  - Pituitary
+  - No Tumor
+
+## 📊 Dataset
+- MRI brain scan images
+- Structured into Training and Testing folders
+- Preprocessing:
+  - Resizing
+  - Normalization
+  - Label encoding
+
+## ⚙️ Tech Stack
+- Python
+- TensorFlow / Keras
+- OpenCV
+- Streamlit
+
+## 🏗️ Architecture
+1. Image input
+2. Preprocessing
+3. Model prediction
+4. Output classification
+
+## 📈 Results
+- High accuracy using Xception model
+- Improved performance over traditional ML models
+
+## ⚠️ Challenges
+- Class imbalance → handled via preprocessing
+- Image quality variation → normalization
+
+## 🔮 Future Improvements
+- Deploy on cloud
+- Add explainability (Grad-CAM)
+- Real-time hospital integration
+
+## 🖥️ How to Run
+```bash
+pip install -r requirements.txt
+streamlit run app.py
