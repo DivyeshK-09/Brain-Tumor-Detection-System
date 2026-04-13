@@ -1,56 +1,56 @@
-# 🧠 Brain Tumor Detection System
+# Brain Tumor Detection System
 
-## 📌 Overview
-A deep learning-based medical imaging system that detects and classifies brain tumors from MRI scans into multiple categories.
+## Overview
+A deep learning-based system that detects and classifies brain tumors from MRI scans into multiple categories.
 
-## 🎯 Objective
+## Objective
 - Automate tumor detection
 - Assist early diagnosis using AI
 
-## 🧠 Approach
+## Approach
 - Dual-model approach:
   - Logistic Regression (baseline)
   - Xception CNN (deep learning)
-- Image classification into:
+- Classification:
   - Glioma
   - Meningioma
   - Pituitary
   - No Tumor
 
-## 📊 Dataset
+## Dataset
 - MRI brain scan images
-- Structured into Training and Testing folders
+- Training and Testing folders
 - Preprocessing:
   - Resizing
   - Normalization
   - Label encoding
 
-## ⚙️ Tech Stack
+## Tech Stack
 - Python
 - TensorFlow / Keras
 - OpenCV
 - Streamlit
 
-## 🏗️ Architecture
+## Architecture
 1. Image input
 2. Preprocessing
 3. Model prediction
 4. Output classification
 
-## 📈 Results
+## Results
 - High accuracy using Xception model
-- Improved performance over traditional ML models
+- Better performance than traditional ML models
 
-## ⚠️ Challenges
-- Class imbalance → handled via preprocessing
-- Image quality variation → normalization
+## Challenges
+- Class imbalance handled via preprocessing
+- Image quality variations addressed with normalization
 
-## 🔮 Future Improvements
-- Deploy on cloud
-- Add explainability (Grad-CAM)
-- Real-time hospital integration
+## Future Improvements
+- Cloud deployment
+- Model explainability (Grad-CAM)
+- Real-time integration
 
-## 🖥️ How to Run
+## How to Run
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
